@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a6c1ee));
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+.location {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.location .city {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+}
+
+.location .date {
+  font-size: 14px;
+  margin-top: 5px;
+  color: white;
+}
+
+.location .error {
+  color: #dd8b8b;
+}
+
+.icon {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.icon i {
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+}
+
+.icon h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.icon .temperature {
+  margin-top: 20px;
+}
+
+.icon .temperature h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+.icon .temperature .unit {
+  text-align: center;
+}
+
+.icon .temperature .unit p {
+  display: inline;
+  font: 12px;
+  color: #979797;
+  cursor: pointer;
+}
+
+.icon .temperature .unit .active {
+  color: black;
+}
+
+.icon .weather-detail {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 120px 120px;
+      grid-template-columns: 120px 120px;
+  -ms-grid-rows: 100px 100px;
+      grid-template-rows: 100px 100px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.icon .weather-detail .box {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.icon .weather-detail .box p {
+  margin: 10px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .location {
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 70%;
+  }
+  .location .city {
+    font-size: 35px;
+    text-align: center;
+  }
+  .location .date {
+    font-size: 20px;
+    text-align: center;
+  }
+  .icon i {
+    font-size: 100px;
+  }
+  .icon .weather-detail {
+    -ms-grid-columns: (130px)[4];
+        grid-template-columns: repeat(4, 130px);
+    margin-top: 30px;
+  }
+  .icon .weather-detail .box {
+    font-size: 30px;
+  }
+  .icon .weather-detail .box p {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
